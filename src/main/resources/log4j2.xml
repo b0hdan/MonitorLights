@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+  <Appenders>
+
+    <!-- Replace these parameters with your configuration -->
+    <LogzioAppender name="Logzio">
+      <logzioToken>KruesjAtPPQqrObiTeyJZrJCUpUypQKQ</logzioToken>
+      <logzioUrl>https://listener.logz.io:8071</logzioUrl>
+      <logzioType>myAwesomeType</logzioType>
+    </LogzioAppender>
+
+  </Appenders>
+
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="Logzio"/>
+    </Root>
+  </Loggers>
+</Configuration>
